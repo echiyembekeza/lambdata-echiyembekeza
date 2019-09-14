@@ -49,3 +49,20 @@ class BoxingGlove(Product):
             return "Hey that hurt!"
         else:
             return "OUCH!"
+
+class Pedometer(Product):
+    """The Acme Step-o-matic"""
+    def __init__(self, name, price=20, weight=6, flammability=2):
+        super().__init__(name, price, weight, flammability)
+
+    def explode(self):
+        return "...I'm walking too much."
+
+    def step(self):
+        """The main purpose of a pedometer."""
+        if self.weight < 5:
+            return "This is useful."
+        elif self.weight < 15:
+            return "This is a bit heavy to walk around with"
+        else:
+            return "NOPE, NOT DOING THIS!"

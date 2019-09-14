@@ -9,6 +9,11 @@ twine = "*"
 [packages]
 numpy = "*"
 pandas = "*"
+unittest = "*"
+random = "*"
+acme = "*"
+acme-test = "*"
+acme-report = "*"
 
 [requires]
 python_version = "3.7"

@@ -6,7 +6,9 @@ import setuptools
 
 REQUIRED = [
     "numpy",
-    "pandas"
+    "pandas",
+    "random",
+    "unittest"
 ]
 
 with open("README.md", "r") as fh:
