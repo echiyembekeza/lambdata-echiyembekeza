@@ -5,10 +5,9 @@ import pandas as pd
 # symbol = 'EOD/AAPL'
 # start = '1988-01-01'
 # end = '2015-12-31'
+# data_raw = get_data_quandl(symbol, start, end)
+# data = generate_features(data_raw)
 
-symbol = ''
-start = ''
-end = ''
 data_raw = get_data_quandl(symbol, start, end)
 data = generate_features(data_raw)
 
@@ -134,6 +133,9 @@ def predict(X, weights):
         intercept = np.ones((X.shape[0], 1))
         X = np.hstack((intercept, X))
     return compute_prediction(X, weights)
+
+
+
 
 train_linear_regression(X_train, y_train, max_iter, learning_rate, fit_intercept=False)
 predict(data, weights)

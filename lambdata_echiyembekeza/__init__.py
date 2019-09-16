@@ -9,6 +9,7 @@ import random
 import acme
 import acme_test
 import acme_report
+import quandl
 
 ONES = pd.DataFrame(np.ones(10))
 ZEROS = pd.DataFrame(np.zeros(50))

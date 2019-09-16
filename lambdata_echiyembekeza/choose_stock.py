@@ -12,6 +12,6 @@ import pandas as pd
 class Choose_Stock:
     """Select the stock of choice"""
     def __init__(self, symbol='EOD/AAPL', start='1988-01-01', end='2015-12-31'):
-        self.symbol = name
-        self.start = price
-        self.end = weight
+        self.symbol = symbol
+        self.start = start
+        self.end = end
